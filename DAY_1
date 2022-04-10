@@ -1,0 +1,13 @@
+def code(k, lis):
+    for i in range(len(lis)):
+        for j in range(i+1,len(lis)):
+            if lis[i]+lis[j]==k:
+                return True
+    return False
+s=input("enter the elements: ")
+lis=list(s.split())
+for i in range(len(lis)):
+    lis[i]=int(lis[i])
+k=int(input("enter the sum:"))
+print(code(k,lis))
+
